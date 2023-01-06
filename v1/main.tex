@@ -1,0 +1,327 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fontawesome}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{Apaar}{Gupta}{ 
+
+\urlstyle{same}\url{} \\
+
+\hspace{3pt}
+\href{mailto:apaar97gupta@gmail.com}
+{\faEnvelope \hspace{1pt} apaar97gupta@gmail.com} 
+\hspace{1pt} | \hspace{1pt} 
+\faPhone \hspace{1pt} (+91) 9958472946 
+\hspace{1pt} | \hspace{1pt} 
+\faMapMarker \hspace{1pt} Ghaziabad, UP, India
+\\
+\vspace{3pt}
+\hspace{6pt}
+\href{https://github.com/apaar97} 
+{\faGithub \hspace{1pt} \custombold{apaar97}} 
+\hspace{1pt}| \hspace{1pt}
+\href{https://www.linkedin.com/in/apaar97}
+{\faLinkedin \hspace{1pt} \custombold{apaar97}}
+\hspace{1pt}| \hspace{1pt}
+\href{https://stackoverflow.com/users/story/5639050}
+{\faStackOverflow \hspace{1pt} \custombold{apaar97}}
+\hspace{1pt}| \hspace{1pt}
+\href{https://medium.com/@apaar97}
+{\faMedium \hspace{1pt}  \custombold{@apaar97}}
+\hspace{1pt}| \hspace{1pt}
+\href{https://www.hackerrank.com/apaar_97}
+{\faCode \hspace{1pt}  \custombold{apaar\_97}}
+\hspace{1pt}| \hspace{1pt}
+\href{https://www.hackerearth.com/@apaar_97}
+{\faHSquare \hspace{1pt}  \custombold{@apaar\_97}}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{1pt}
+
+\section{Education} 
+\vspace{1pt}
+\subsection{Netaji Subhas Institute} 
+\subsection{of Technology}
+\descript{B.E. in Computer Science}
+\location{Grad. May 2019 | New Delhi, India 
+\newline Percentage: 76.92\% ( CGPA: 8.4 ) }
+\sectionsep
+
+\subsection{Delhi Public School}
+\subsection{Ghaziabad Vasundhara}
+\location{Grad. May 2015 |  Ghaziabad, India}
+\vspace{1pt}
+\descript{Class XII | CBSE-AISSCE}
+\location{Percentage - 96.2\%}
+\vspace{1pt}
+\descript{Class X | CBSE}
+\location{CGPA - 10.0}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\vspace{2pt}
+\descript{\large{Undergraduate}}
+\normalsize
+\vspace{1pt}
+\hspace{3pt} Artificial Intelligence \\
+\hspace{3pt} Theory of Computation \\
+\hspace{3pt} Compiler Design \\
+\hspace{3pt} Operating Systems \\
+\hspace{3pt} DBMS \& Information Technology \\
+\hspace{3pt} Computer Graphics \\
+\hspace{3pt} Algorithms \& Data Structures \\
+\hspace{3pt} Discrete Mathematics
+
+\vspace{5pt}
+\descript{\href{https://www.coursera.org/account/accomplishments/specialization/3435R2T22BF5}{\large{Deep Learning Specialization}}}
+\location{Coursera | Andrew Ng }
+\vspace{1pt}
+\custombold{Course grade - 98.6\%} \\
+\vspace{1pt}
+\hspace{3pt} Neural Networks and Deep Learning \\
+\hspace{3pt} Hyperparameter tuning, \\ 
+\hspace{3pt} Regularization and Optimization \\
+\hspace{3pt} Structuring ML Projects \\
+\hspace{3pt} Convolutional Neural Networks \\
+\hspace{3pt} Sequence Models \\
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\vspace{2pt}
+\descript{Programming}
+\vspace{2pt}
+\textbullet{} C  
+\textbullet{} C++  
+\textbullet{} Python  
+\textbullet{} Java
+\\ 
+\textbullet{} JavaScript  
+\textbullet{} HTML 
+\textbullet{} CSS 
+\\ 
+\vspace{2pt}
+\descript{Software Development}
+\vspace{2pt}
+\textbullet{} React  
+\textbullet{} Redux
+\textbullet{} Node.js
+\\
+\textbullet{} Django 
+\textbullet{} Pygame
+\textbullet{} Git
+\\
+\textbullet{} Android 
+\textbullet{} XML 
+\textbullet{} SQLite
+\\
+\textbullet{} MySQL 
+\textbullet{} MongoDB  \\
+\vspace{2pt}
+\descript{Data Science}
+\vspace{2pt}
+\textbullet{} Pytorch \textbullet{} Keras  \textbullet{} Tensorflow \\ 
+\textbullet{} OpenCV \textbullet{} Numpy \textbullet{} 
+Pandas \\ 
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\vspace{1pt}
+\runsubsection{D.E.Shaw India Pvt Ltd}
+\descript{ | \hspace{2pt} Software Intern }
+\location{ June 2018 – July 2018 \hspace{1pt} | \hspace{1pt} Hyderabad, India}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\vspace{1pt}
+\item Build a developer tool to detect and profile performance bottlenecks in React-Redux based web applications.
+\item Developed a browser integration for the tool to generate performance report with visualizations of react component hierarchy and event timeline
+\end{tightemize}
+\sectionsep
+
+\runsubsection{IntuiComp TeraScience Pvt Ltd}
+\descript{ | \hspace{1pt} Project Trainee,  R\&D Lab}
+\location{Jan 2018 – April 2018 \hspace{1pt} | \hspace{1pt} Gurgaon, India}
+\begin{tightemize}
+\item Developed a smart Learning Management System under the guidance of \\
+\custombold{\href{https://scholar.google.co.in/citations?hl=en&user=lVu8BOcAAAAJ&view_op=list_works&sortby=pubdate}{Dr Arpan Kar (Associate Prof. IITD)}} and
+\custombold{\href{https://scholar.google.co.in/scholar?hl=en&as_sdt=0\%2C5&q=Dipanjan+Goswami&btnG=}{Dr Dipanjan Goswami (R\&D ICTS)}}
+\item Worked on generating tags using topic modelling (LDA model)
+\item Build a recommender system to map project mentors to trainee candidates
+\item  Developed the web application and integrated a deep neural network to dynamically compute profile score based on user activity 
+\item Developed the REST API for android client application 
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\vspace{1pt}
+
+\runsubsection{
+VARTALAP
+}
+\descript{| \hspace{1pt} Project Leader}
+\location{March 2019 }
+\vspace{2pt}
+\hspace{10pt}
+Developed VoIP conference application with Real-time Accent translation. \\
+\hspace{10pt}
+Used Deep CNN and GAN models for accent detection and conversion. \\
+\hspace{10pt}
+Presented at SIH 2019 Grand finale, selected as the winning solution
+\sectionsep
+
+\runsubsection{
+\href{https://github.com/apaar97/UpchaarWeb}{UPCHAAR}
+}
+\descript{ | \hspace{1pt} Web back-end developer}
+\location{April 2018 }
+\vspace{2pt}
+\hspace{10pt}
+Developed a central web portal for Patients, Doctors and Hospitals to manage and \\
+\hspace{10pt}
+provide efficient health-care for improving appointment scheduling in hospitals. \\
+\sectionsep
+
+\runsubsection{
+\href{https://github.com/apaar97/TranslateApp}{Translate}
+}
+\descript{ | \hspace{1pt} Android App developer}
+\location{April 2017 }
+\vspace{2pt}
+\hspace{10pt}
+Developed an app to translate text conversations, supporting 90 languages with \\
+\hspace{10pt}
+Speech-To-Text and Text-to-Speech features for ease of accessibility.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Societies} 
+\vspace{1pt}
+\runsubsection{
+\href{https://www.facebook.com/AlgorithmSocietyOfNSIT/}{Algorithm Society of NSIT}
+}
+\descript{ | \hspace{1pt} Director of events}
+\location{August 2016 - May 2019}
+\begin{tightemize}
+\item
+Organized online and onsite events based on competitive programming, mathematics and game theory as part of annual Tech-fest \\
+\item 
+Conducted SIG classes on algorithms \& data structures   
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ACHIEVEMENTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Achievements} 
+\begin{tabular}{rll}
+2019 & Winners - Smart India Hackathon 2019 \\
+2015 & 1642th - JEE Mains \hspace{1pt}|\hspace{1pt} 6220th - JEE Advanced \\
+2015 & CBSE Merit - Top 0.1 percentile \\
+2013 & School rank 1 - National Science Olympiad
+\end{tabular}
+\sectionsep
+
+
+\end{minipage} 
+\end{document}
